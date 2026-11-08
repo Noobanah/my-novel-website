@@ -2,8 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/my-novel-website/", // <--- เติมบรรทัดนี้ลงไป (ดูให้ตรงกับชื่อ Repo ของคุณ)
+  base: "./", // <--- แก้เป็น './' เพื่อให้เรียกไฟล์ผ่าน relative path
 });
